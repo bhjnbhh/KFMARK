@@ -1,0 +1,20 @@
+练习时
+node不支持es6的import高级引用语法
+需要bebal
+1.npm install babel-cli -g
+2.npm install babel-preset-env -D
+3.babel-node --presets env  加上文件名
+
+node服务器的搭建
+1.创建主文件夹
+2.再创建一个分文件夹 bin目录 里面创建www.js为入口文件
+3.在外层创建一个app.js 书写 服务器的业务逻辑代码
+4.npm init -y 创建配置文件
+5.npm install nodemon -D 
+在修改配置中
+ "scripts": {
+    "dev": "nodemon bin/www.js"
+  },
+目的是 服务器代码修改服务器也实时修改
+
+
