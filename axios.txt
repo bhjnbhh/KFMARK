@@ -1,3 +1,10 @@
+axios和ajax的区别：
+axios是通过Promise实现对ajax技术的一种封装，就像jquery对ajax的封装一样，axios回来的数据是promise，ajax回来的数据是回调，axios比ajax更好用更安全。
+
+简单来说就是ajax技术实现了局部数据的刷新，axios实现了对ajax的封装；axios有的ajax都有，ajax有的axios不一定有。
+
+总结一句话就是axios是ajax，ajax不止axios。
+ajax 可以直接使用同步方法，ajax可以直接实现跨域请求，而这两个很重要的功能axios都不可以，同步必须添加async和await 才可以，跨域只能通过代理来实现
 1. 安装axios
 
 npm install axios

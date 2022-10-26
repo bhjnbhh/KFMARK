@@ -1,0 +1,8 @@
+1.数据的双向绑定是什么 ，原理是什么 主要就是事件的监听和
+vue2.0使用defineproperty   数据劫持getter 和setter发布者和订阅者
+vue3.0是采用proxy 数据代理
+
+默认渲染的时候 通过触发属性收集依赖dep.depend()
+当属性发生变化的时候就 触发watcher通过dep.notify
+
+
